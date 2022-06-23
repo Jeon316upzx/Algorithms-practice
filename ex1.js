@@ -29,7 +29,10 @@ const compareTwoArray = (arr1, arr2) =>{
 }
 
 
-console.log(`using brute force, the Big O of the function is O(n^2) -> `,compareTwoArray([1,2], [3,4]))
+console.log(`using brute force, 
+             the Big O of the function is O(n^2) 
+             the space complexity is 0(1)
+             -> `,compareTwoArray([1,2], [3,4]))
 
 // using the object approach.
 
@@ -57,7 +60,10 @@ const compareTwoArrayObjApproach = (arr1, arr2) => {
 
 
 
-console.log(`using object approach, the Big O of the function is O(n) ->`, compareTwoArrayObjApproach([1,2], [3,4]))
+console.log(`using object approach, 
+            the Big O of the function is O(n) 
+            the space complexity is 0(n)
+             ->`, compareTwoArrayObjApproach([1,2], [3,4]))
 
 
 
