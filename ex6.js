@@ -21,7 +21,8 @@ const sortArray = (array) =>{
 sortArray([2,3,1,23,3,5,0,1])
 
 //Descending Order.
-
+// Order: Descending
+// Big O is O(n^2) and space complexity is O(1) 
 const sortArrayDescendingOrder = (array) =>{
 
     //check if array has only one element
