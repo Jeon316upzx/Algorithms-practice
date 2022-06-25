@@ -26,6 +26,38 @@ const findthePeakvalue = (array) =>{
 }
 
 
-console.log(findthePeakvalue([1,2,3,4,5,100]))
+// console.log(findthePeakvalue([1,2,3,4,5,100]))
 
 
+//another solution
+const findPeakElement = (array) =>{
+   //edge case if array only has one element
+   
+   if(array.length === 1){
+     return array[0];
+   }
+
+
+   for(let i = 0; i < array.length-1; i++){
+
+      if(array[0] > array[1]){
+        return array[0]
+      }
+
+      for(let i = 0; i < array.length; i++){
+        if(array[i] >= array[i - 1] && array[i] >= array[i + 1]){
+          return array[i];
+        }
+       }
+
+       if(array[array.length - 1] > array[array.length - 2]){
+        return array[array.length - 1];
+      }
+   }
+}
+console.log(findPeakElement([1,2,3,399,5,11]))
+
+
+
+
+//divide and conquer approach
